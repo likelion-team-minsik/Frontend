@@ -113,7 +113,9 @@ export const NickInput = styled.input`
     display: inline-flex;
 
    
-    padding-bottom: 10px;
+    padding-bottom: 10px;'
+
+    
 
     align-items: center;
     flex-shrink: 0;
