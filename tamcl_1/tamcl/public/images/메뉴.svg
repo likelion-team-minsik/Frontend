@@ -1,0 +1,30 @@
+<svg width="40" height="44" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_g_20_1859)">
+<path d="M18.667 0.469238C30.3076 0.469418 39.7527 10.1039 39.7529 21.9995C39.7529 33.8953 30.3077 43.5306 18.667 43.5308C12.8081 43.5308 8.21041 42.2105 5.0791 39.436C1.95352 36.6666 0.247153 32.411 0.24707 26.4448C0.24707 20.4729 1.95759 13.9632 5.12402 8.95459C8.28979 3.94716 12.8885 0.469238 18.667 0.469238Z" stroke="black" stroke-width="0.494033"/>
+<path d="M18.4429 12.1672C23.0829 12.1674 26.7387 15.128 26.7388 18.6643C26.7388 22.2006 23.083 25.1612 18.4429 25.1614C13.8026 25.1614 10.146 22.2008 10.146 18.6643C10.1461 15.1279 13.8026 12.1672 18.4429 12.1672Z" stroke="black" stroke-width="0.5"/>
+<circle cx="18.4424" cy="35.7573" r="3.24872" transform="rotate(45 18.4424 35.7573)" stroke="black" stroke-width="0.5"/>
+<path d="M20.4216 33.7782L16.4632 37.7366M16.4632 33.7782L20.4216 37.7366" stroke="black" stroke-width="0.5"/>
+<circle cx="25.6393" cy="28.5604" r="0.449813" fill="black"/>
+<circle cx="37.3346" cy="24.9618" r="0.449813" fill="black"/>
+<circle cx="31.9366" cy="19.5641" r="0.449813" fill="black"/>
+<circle cx="34.6356" cy="9.66832" r="0.449813" fill="black"/>
+<circle cx="20.2416" cy="9.66832" r="0.449813" fill="black"/>
+<circle cx="24.7396" cy="3.37096" r="0.449813" fill="black"/>
+<circle cx="11.2452" cy="8.76866" r="0.449813" fill="black"/>
+<circle cx="2.24913" cy="19.5641" r="0.449813" fill="black"/>
+<circle cx="9.44615" cy="26.7611" r="0.449813" fill="black"/>
+<circle cx="4.94786" cy="34.8578" r="0.449813" fill="black"/>
+<circle cx="25.6393" cy="37.5565" r="0.449813" fill="black"/>
+</g>
+<defs>
+<filter id="filter0_g_20_1859" x="0" y="0.222168" width="40" height="43.5557" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.25 0.25" numOctaves="3" seed="1971" />
+<feDisplacementMap in="shape" scale="0" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_20_1859">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg>
