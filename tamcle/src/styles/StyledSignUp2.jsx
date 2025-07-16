@@ -121,8 +121,8 @@ export const Check = styled.div `
     height: 33px;
 
     position: absolute;
-    top: 175px;
-    right: 525px;
+    top: 200px;
+    right: 800px;
 `;
 
 export const Key = styled.div`

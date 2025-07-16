@@ -72,6 +72,14 @@ export const Box1 = styled.div`
 `;
 
 export const X = styled.div`
+  position: relative;
+  z-index: 9999;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 // 제목 입력창

@@ -3,7 +3,11 @@ import * as R from "../styles/StyledSignDone"
 import { useNavigate } from "react-router-dom";
 
 function SignDone(){
+   const navigate = useNavigate();
 
+    const GoTcBtn = () => {
+        navigate('/');
+    };
     return(
         <R.Background>
         <R.BackBox>
@@ -30,7 +34,7 @@ function SignDone(){
                         width="145px"/> 
                         </R.CenterLogo>
 
-                        <R.GoTcBtn>탐클톡 탐험가기</R.GoTcBtn>
+                        <R.GoTcBtn onClick={GoTcBtn}>탐클톡 탐험가기</R.GoTcBtn>
       </R.BackBox>
       <R.BackImg></R.BackImg>
       </R.Background>

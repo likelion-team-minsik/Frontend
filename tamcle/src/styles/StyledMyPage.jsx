@@ -63,6 +63,14 @@ export const MyPageWord = styled.div`
 
 export const ProfileFrame = styled.div`
     margin-top: 30px;
+    width: 126px;
+    height: 126px;
+      img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  // 이미지 크기 맞추면서 자르기
+    border-radius: 50%;
+  }
 `;
 
 export const InPro = styled.div`
@@ -255,6 +263,8 @@ export const Camera = styled.div`
 
     /* 자식 크기만큼 자신의 중앙을 기준으로 이동 */
     transform: translate(-465%, -50%);
+
+    z-index: 9999;
 `;
 
 export const DropFrame1 = styled.div`

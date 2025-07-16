@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef} from "react";
 import * as R from "../styles/StyledMyPage";
 import { useNavigate } from "react-router-dom";
 
@@ -13,6 +13,23 @@ function MyPage() {
     };
 
     const navigate = useNavigate();
+
+    const fileInputRef = useRef(null);
+    // 카메라 이미지 클릭 시 파일 선택창 열기
+  const handleCameraClick = () => {
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
+    }
+  };
+
+  // 파일 선택 후 처리 (예: 업로드 등)
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      console.log("선택한 파일:", file);
+      // 여기서 파일 업로드 로직 추가 가능
+    }
+  };
 
 
     return(
@@ -48,10 +65,18 @@ function MyPage() {
                     width=" 39px" alt="플러스 이미지"
                  /></R.Plus>
 
+
+                  <input
+                    type="file"
+                    accept="image/*"
+                    style={{ display: "none" }}
+                    ref={fileInputRef}
+                    onChange={handleFileChange}
+                  />
                    {/* 드롭다운 이미지 영역 - dropdownOpen이 true일 때만 보이도록 */}
                 {dropdownOpen && (
                 <R.DropdownContainer>
-                    <R.Camera><img src={`${process.env.PUBLIC_URL}/images/Camera.png`} width="28.483px"/></R.Camera>
+                    <R.Camera onClick={handleCameraClick}><img src={`${process.env.PUBLIC_URL}/images/Camera.png`} width="28.483px"/></R.Camera>
                     <R.DropFrame1><img src={`${process.env.PUBLIC_URL}/images/ProfileFrame.png`}  width="60px" /></R.DropFrame1>
                     <R.DropPro><img src={`${process.env.PUBLIC_URL}/images/InPro2.png`} width="28.483px"/></R.DropPro>
                     <R.DropFrame><img src={`${process.env.PUBLIC_URL}/images/ProfileFrame.png`}  width="60px" /></R.DropFrame>

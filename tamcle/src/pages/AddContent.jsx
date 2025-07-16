@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import * as R from "../styles/StyledAddContent";
+import { useNavigate } from "react-router-dom";
 
 function AddContent() {
     
@@ -13,6 +14,12 @@ function AddContent() {
       }
     
   };
+
+    const navigate = useNavigate();
+    const goTCT = () => {
+      console.log("✅ X 클릭됨");
+      navigate(`/TamcleTalk`);
+    };
 
     return(
         <R.Background>
@@ -35,7 +42,7 @@ function AddContent() {
               </R.TopLogo>
 
             <R.Box1> 
-            <R.Word>글쓰기</R.Word> <R.X><img src= {`${process.env.PUBLIC_URL}/images/X.png`} width="35px"/></R.X>
+            <R.Word>글쓰기</R.Word> <R.X onClick={goTCT}><img src= {`${process.env.PUBLIC_URL}/images/X.png`} width="35px"/></R.X>
            </R.Box1> 
 
            <R.Box2>
