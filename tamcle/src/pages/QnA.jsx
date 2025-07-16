@@ -6,7 +6,6 @@ function QnA(){
 
     const [OpenIndex, setOpenIndex] = useState(null)
 
-    
     const toggleAnswer = (index) => {
       setOpenIndex(OpenIndex === index ? null : index);
       /*지금 열려 있는 질문(openIndex)이 방금 클릭한 질문 번호(index) 와 같다면 → null, 다르면 열기 */
