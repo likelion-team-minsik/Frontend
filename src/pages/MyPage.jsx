@@ -35,6 +35,21 @@ function MyPage() {
     }
   };
 
+
+    const [showModal, setShowModal] = useState(false);
+
+    const handleLogout = () => {
+      setShowModal(true);
+    };
+
+    const confirmLogout = () => {
+      // 로그아웃 로직
+      setShowModal(false);
+    };
+
+    const cancelLogout = () => {
+      setShowModal(false);
+    };
   return (
     <R.Background>
       <R.BackBox>
@@ -168,13 +183,31 @@ function MyPage() {
             <img src={`${process.env.PUBLIC_URL}/images/Go.png`} width="33px" />
           </R.Go3Btn>
         </R.Box2>
-        <R.Box2>
-          <R.Go4>로그아웃</R.Go4>
-          <R.Go4Btn>
-            <img src={`${process.env.PUBLIC_URL}/images/Go.png`} width="33px" />
-          </R.Go4Btn>
-        </R.Box2>
+      <R.Box2 onClick={handleLogout}>
+        <R.Go4>로그아웃</R.Go4>
+        <R.Go4Btn>
+          <img src={`${process.env.PUBLIC_URL}/images/Go.png`} width="33px" />
+        </R.Go4Btn>
+      </R.Box2>
       </R.Box3>
+
+
+  {showModal && (
+    <R.ModalOverlay>
+      <R.ModalContent>
+        <R.LogoImg src={`${process.env.PUBLIC_URL}/images/로고.svg`} alt="로고" width="80.288px" />
+        <R.ModalText>로그아웃 하시겠습니까?</R.ModalText>
+        <R.HorizontalLine />
+        <R.ButtonRow>
+          <button onClick={confirmLogout}>예</button>
+          <div className="v-line" />
+          <button onClick={cancelLogout}>아니오</button>
+        </R.ButtonRow>
+      </R.ModalContent>
+    </R.ModalOverlay>
+  )}
+
+
     </R.Background>
   );
 }

@@ -69,8 +69,8 @@ function Signup2() {
               }}
             >
               <option value="naver.com">naver.com</option>
-              <option value="daum.net">gmail.com</option>
-              <option value="">gmail.com</option>
+              <option value="daum.net">daum.net</option>
+              <option value="gmail.com">gmail.com</option>
             </R.DomainSelect>
           </R.Box2>
         </R.Box1>

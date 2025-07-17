@@ -21,8 +21,9 @@ import Search from "./pages/Search";
 import Tool from "./pages/Tool";
 
 
-import TamcleTalk from "./pages/TamcleTalk"
-
+import TamcleTalk1 from "./pages/TamcleTalk1"
+import TamcleTalk2 from "./pages/TamcleTalk2"
+import TamcleTalk3 from "./pages/TamcleTalk3"
 import CommentArea from "./pages/CommentArea"
 import AddContent from "./pages/AddContent";
 import Search2 from "./pages/Search2";
@@ -61,7 +62,9 @@ function App() {
         <Route path="/Tool" element={<Tool />} />
 
         
-        <Route path="/TamcleTalk" element={<TamcleTalk />} />
+        <Route path="/TamcleTalk1" element={<TamcleTalk1 />} />
+        <Route path="/TamcleTalk2" element={<TamcleTalk2 />} />
+        <Route path="/TamcleTalk3" element={<TamcleTalk3 />} />
         <Route path="/CommentArea/:id" element={<CommentArea />} />
         <Route path="/AddContent" element={<AddContent />}/>
         <Route path="/Search2" element={<Search2 />}/>

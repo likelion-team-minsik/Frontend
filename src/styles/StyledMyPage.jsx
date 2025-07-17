@@ -267,3 +267,72 @@ export const BackGround = styled.div`
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 3;
 `;
+export const ModalOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+`;
+
+export const ModalContent = styled.div`
+  background: white;
+  border-radius: 12px;
+    width: 276.834px;
+  height: 137px;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+`;
+
+export const ModalText = styled.div`
+  padding: 20px 0 15px;
+
+
+  color: #000;
+font-family: Pretendard;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; /* 20.8px */
+`;
+
+export const HorizontalLine = styled.div`
+  height: 0.5px;
+  background-color: #000;
+  width: 100%;
+`;
+
+export const ButtonRow = styled.div`
+  display: flex;
+  align-items: stretch;     // 버튼과 선이 높이 맞춰지도록!
+  height: 50px;
+
+  button {
+    flex: 1;
+    border: none;
+    background: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .v-line {
+    width: 0.5px;
+    background-color: #000;
+  }
+`;
+
+export const LogoImg = styled.img`
+
+margin-top: 27.55px;
+margin-bottom: -13px;
+;
+`;

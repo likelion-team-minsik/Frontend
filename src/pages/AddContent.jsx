@@ -16,8 +16,7 @@ function AddContent() {
 
   const navigate = useNavigate();
   const goTCT = () => {
-    console.log("✅ X 클릭됨");
-    navigate(`/TamcleTalk`);
+    navigate(`/TamcleTalk2`);
   };
 
   const [menuOpen, setMenuOpen] = useState(false);
