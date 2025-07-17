@@ -17,6 +17,7 @@ import Result4 from "./pages/Result4";
 import Intro from "./pages/Intro";
 import Search from "./pages/Search";
 import Tool from "./pages/Tool";
+
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -58,7 +59,7 @@ function App() {
         <Route path="/Intro" element={<Intro />} />
         <Route path="/Search" element={<Search />} />
         <Route path="/Tool" element={<Tool />} />
-          
+
         <Route path="/" element={<Main2 />} />
         <Route path="/TamcleTalk" element={<TamcleTalk />} />
         <Route path="/CommentArea/:id" element={<CommentArea />} />
@@ -73,7 +74,6 @@ function App() {
         <Route path="/MyScrap" element={<MyScrap/>}/>
         <Route path="/MyComment" element={<MyComment/>}/>
         <Route path="/Login" element={<Login/>}/>
-
       </Routes>
     </BrowserRouter>
   );
