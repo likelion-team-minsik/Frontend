@@ -1,5 +1,7 @@
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { useState, useEffect } from "react";
+
 import Main from "./pages/Main";
 import Menu from "./pages/Menu";
 import Test from "./pages/Test";
@@ -18,11 +20,9 @@ import Intro from "./pages/Intro";
 import Search from "./pages/Search";
 import Tool from "./pages/Tool";
 
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import { useState, useEffect } from "react";
 
 import TamcleTalk from "./pages/TamcleTalk"
-import Main2 from "./pages/Main2"
+
 import CommentArea from "./pages/CommentArea"
 import AddContent from "./pages/AddContent";
 import Search2 from "./pages/Search2";
@@ -60,11 +60,11 @@ function App() {
         <Route path="/Search" element={<Search />} />
         <Route path="/Tool" element={<Tool />} />
 
-        <Route path="/" element={<Main2 />} />
+        
         <Route path="/TamcleTalk" element={<TamcleTalk />} />
         <Route path="/CommentArea/:id" element={<CommentArea />} />
         <Route path="/AddContent" element={<AddContent />}/>
-        <Route path="/Search" element={<Search2 />}/>
+        <Route path="/Search2" element={<Search2 />}/>
         <Route path="/QnA" element={<QnA />}/>
         <Route path="/SignUp" element={<SignUp/>}/>
         <Route path="/SignUp2" element={<SignUp2/>}/>

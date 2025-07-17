@@ -37,7 +37,7 @@ const Menu = ({ isOpen, onClose }) => {
       <div id="menu4" onClick={() => goPage("/Tool")}>
         장비 구경하기
       </div>
-      <div id="menu5">탐클톡</div>
+      <div id="menu5" onClick={()=> goPage("/TamcleTalk")}>탐클톡</div>
     </M.MenuBox>
   );
 };

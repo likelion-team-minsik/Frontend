@@ -17,7 +17,7 @@ function TamcleTalk() {
   };
 
     const goSearch = () => {
-    navigate('/Search');
+    navigate('/Search2');
   };
 
     const goQnA = () => {
