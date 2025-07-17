@@ -16,7 +16,7 @@ export const Box = styled.div`
 `;
 
 export const Bar = styled.div`
-  width: 79px;
+  width: 78.6px;
   height: 3px;
   flex-shrink: 0;
   background: #ff8b9a;
@@ -24,7 +24,7 @@ export const Bar = styled.div`
   z-index: 2;
   align-items: flex-start;
   left: 0px;
-  top: 65px;
+  top: 70px;
 `;
 
 export const TextGroup = styled.div`

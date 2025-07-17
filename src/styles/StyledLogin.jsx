@@ -1,171 +1,174 @@
 import { styled } from "styled-components";
 
 export const Background = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    height: 100vh; /* 화면 전체 높이로 지정 */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; /* 화면 전체 높이로 지정 */
 
-    justify-content: center;
+  justify-content: center;
 
-    position: relative;
+  position: relative;
 `;
 
 export const BackBox = styled.div`
+  position: relative;
+  width: 393px;
+  height: 100vh;
 
-    width: 393px;
-    height: 100vh;
-
-    display: flex;
-    align-items: center; /* 수평 중앙 정렬 */
-    flex-direction: column;
-   
+  display: flex;
+  align-items: center; /* 수평 중앙 정렬 */
+  flex-direction: column;
 `;
 
-export const TopLogo = styled.div` 
-    /* 이것도 박스 */
+export const TopLogo = styled.div`
+  /* 이것도 박스 */
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    width: 333px;
-    height: 72px;
+  width: 333px;
+  height: 72px;
 
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const WordLogo = styled.div`
-    height: 27px;
-    border-width: 0.5px;
+  height: 27px;
+  border-width: 0.5px;
 
-    width: 161.125px;
-    flex-shrink: 0;
-
+  width: 161.125px;
+  flex-shrink: 0;
 `;
 
-
 export const PicLogo = styled.div`
-    width: 40px;
-    height: 43.556px;
-    color: #000000;
+  width: 40px;
+  height: 43.556px;
+  color: #000000;
+  cursor: pointer;
 `;
 
 export const BackImg = styled.div`
+  width: 393px;
+  height: 100%;
+  background-image: url("/images/BackImg2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    width: 393px;
-    height: 100%;
-    background-image: url('/images/BackImg2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  position: absolute;
 
-    position: absolute;
+  top: 140px;
+  left: 50%;
+  width: 393px;
+  height: 100vh;
 
-    top: 140px;
-    left: 50%;     
-    width: 393px;
-    height: 100vh;
-
-     transform: translateX(-50%);
+  transform: translateX(-50%);
 `;
 
 export const WordLogoBig = styled.div`
-
-    margin-top: 80px;
+  margin-top: 80px;
 `;
 
 export const Box1 = styled.div`
-    display:flex;
-    width: 333px;
-    flex-direction: column;
+  display: flex;
+  width: 333px;
+  flex-direction: column;
 
-    margin-top: 40px;
-    gap: 10px;
+  margin-top: 40px;
+  gap: 10px;
 
-    position: relative;
-    z-index: 999;
-`; 
+  position: relative;
+  z-index: 9;
+`;
 export const Id = styled.div`
-color: #000;
-font-family: Pretendard;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 130%; /* 20.8px */
-
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
 `;
 
 export const IdInput = styled.input`
-display: inline-flex;
-height: 54px;
-padding-left: 10px;
-align-items: center;
-flex-shrink: 0;
-border-radius: 10px;
-border: 1px solid #000;
-background: #FFF;
+  display: inline-flex;
+  height: 54px;
+  padding-left: 10px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fff;
   width: 333px;
 `;
 
 export const Key = styled.div`
-color: #000;
-font-family: Pretendard;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 130%; /* 20.8px */
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
 `;
 
 export const KeyInput = styled.input`
-display: inline-flex;
-height: 54px;
+  display: inline-flex;
+  height: 54px;
 
-align-items: center;
-flex-shrink: 0;
-border-radius: 10px;
-border: 1px solid #000;
-background: #FFF;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fff;
 
-padding-left: 10px;
+  padding-left: 10px;
 
   width: 333px;
-
 `;
 
 export const LoginBtn = styled.div`
+  width: 333px;
+  box-sizing: border-box;
 
-     width: 333px;
-    box-sizing: border-box;
+  padding: 12px;
+  margin-top: 190px;
 
-    padding: 12px;
-    margin-top: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid #000;
 
-    color: #000;
-    font-family: Pretendard;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 10px;
-    border: 1px solid #000;
+  margin-top: 190px;
 
-    margin-top: 190px;
-
-    position: relative;
-    z-index: 999;
+  position: relative;
+  z-index: 999;
 `;
 
 export const Find = styled.div`
-color: #676767;
-font-family: Pretendard;
-font-size: 14px;
-font-style: normal;
-font-weight: 300;
-line-height: 130%; /* 18.2px */
+  color: #676767;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 18.2px */
 
-margin-top: 50px;
+  margin-top: 50px;
+`;
+
+export const BackGround = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
 `;

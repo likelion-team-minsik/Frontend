@@ -12,6 +12,8 @@ const Intro = () => {
 
   return (
     <I.Container>
+      {menuOpen && <I.Background onClick={() => setMenuOpen(false)} />}
+      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
       <I.Logo>
         <img
           src={`${process.env.PUBLIC_URL}/images/로고.svg`}
@@ -442,8 +444,6 @@ const Intro = () => {
         </I.Table9>
         <I.ViewMore9>더보기)</I.ViewMore9>
       </I.Section9>
-      {menuOpen && <I.Background onClick={() => setMenuOpen(false)} />}
-      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </I.Container>
   );
 };

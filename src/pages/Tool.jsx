@@ -18,6 +18,8 @@ const Tool = () => {
 
   return (
     <T.Container>
+      {menuOpen && <T.Background onClick={() => setMenuOpen(false)} />}
+      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
       <T.Logo>
         <img
           src={`${process.env.PUBLIC_URL}/images/로고.svg`}
@@ -200,8 +202,6 @@ const Tool = () => {
           </div>
         </T.Detail>
       </T.Section>
-      {menuOpen && <T.Background onClick={() => setMenuOpen(false)} />}
-      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </T.Container>
   );
 };

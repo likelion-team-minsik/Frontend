@@ -1,107 +1,98 @@
 import { styled } from "styled-components";
 
 export const Background = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    height: 100vh; /* 화면 전체 높이로 지정 */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; /* 화면 전체 높이로 지정 */
 
-    justify-content: center;
-
+  justify-content: center;
 `;
 
 export const BackBox = styled.div`
+  position: relative;
+  width: 393px;
+  height: 100vh;
 
-    width: 393px;
-    height: 100vh;
-
-    display: flex;
-    align-items: center; /* 수평 중앙 정렬 */
-    flex-direction: column;
-   
+  display: flex;
+  align-items: center; /* 수평 중앙 정렬 */
+  flex-direction: column;
 `;
 
-export const TopLogo = styled.div` 
-    /* 이것도 박스 */
+export const TopLogo = styled.div`
+  /* 이것도 박스 */
 
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    width: 333px;
-    height: 72px;
+  width: 333px;
+  height: 72px;
 
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const WordLogo = styled.div`
-    height: 27px;
-    border-width: 0.5px;
+  height: 27px;
+  border-width: 0.5px;
 
-    width: 161.125px;
-    flex-shrink: 0;
-    margin-left: -3.5px;
+  width: 161.125px;
+  flex-shrink: 0;
+  margin-left: -3.5px;
 `;
 
-
 export const PicLogo = styled.div`
-    width: 40px;
-    height: 43.556px;
-    color: #000000;
+  width: 40px;
+  height: 43.556px;
+  color: #000000;
+  cursor: pointer;
 `;
 
 export const MyPageWord = styled.div`
-    color: #000;
-    font-family: Pretendard;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%; /* 31.2px */
-
-    
+  color: #000;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
 `;
 
 export const ProfileFrame = styled.div`
-    margin-top: 30px;
-    width: 126px;
-    height: 126px;
-      img {
+  margin-top: 30px;
+  width: 126px;
+  height: 126px;
+  img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  // 이미지 크기 맞추면서 자르기
+    object-fit: cover; // 이미지 크기 맞추면서 자르기
     border-radius: 50%;
   }
 `;
 
 export const InPro = styled.div`
-    margin-top: -100px;
+  margin-top: -100px;
 `;
 
 export const Plus = styled.div`
-    
-    display: flex;
-    justify-content: flex-end; /* 오른쪽 끝 정렬 */
-    align-items: center; /* 세로 중앙 정렬 */
-    padding: 20px; /* 여백 조절 */
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 끝 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  padding: 20px; /* 여백 조절 */
 
-    margin-top: -30px;
-    margin-left: 65px;
-
-  
-
-    position: relative;
-    z-index: 1000; 
+  margin-top: -30px;
+  margin-left: 65px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
 `;
 
 export const Nick = styled.div`
-    color: #000;
-    font-family: Pretendard;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%; /* 26px */
-
-    
+  color: #000;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 26px */
 `;
 
 export const NickInput = styled.input`
@@ -138,65 +129,48 @@ export const Box1 = styled.div`
   justify-content: flex-start;
   margin-top: 10px;
   margin-left: 75px;
-
 `;
 
 export const Box2 = styled.div`
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    justify-content: space-between;
-    width: 333px;
+  justify-content: space-between;
+  width: 333px;
 
-    
-    align-items: center;
-
- 
-
+  align-items: center;
 `;
 export const Box3 = styled.div`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-  
-    width: 333px;
-    height: 100vh;
+  width: 333px;
+  height: 100vh;
 
-    margin-top: 20px;
-    gap: 10px;
-    margin-left: 12px;
-
+  margin-top: 20px;
+  gap: 10px;
+  margin-left: 12px;
 `;
 
-export const Go1 = styled.div`
-    
-`;
+export const Go1 = styled.div``;
 
-export const Go2 = styled.div`
-`;
+export const Go2 = styled.div``;
 
-export const Go3 = styled.div`
-`;
+export const Go3 = styled.div``;
 
-export const Go4 = styled.div`
-`;
+export const Go4 = styled.div``;
 
-export const Go1Btn = styled.div`
+export const Go1Btn = styled.div``;
 
-`;
+export const Go2Btn = styled.div``;
 
-export const Go2Btn = styled.div`
-`;
+export const Go3Btn = styled.div``;
 
-export const Go3Btn = styled.div`
-`;
-
-export const Go4Btn = styled.div`
-`;
+export const Go4Btn = styled.div``;
 
 export const DropdownContainer = styled.div`
   position: fixed;
-     
+
   left: 50%;
 
   margin-top: 350px;
@@ -215,72 +189,81 @@ export const DropdownContainer = styled.div`
   /* 초기 상태: 가로 중앙, 아래로 숨김 */
   transform: translateX(-50%) translateY(100%);
 
-
   /* 드롭다운 열렸을 때: translateY만 0으로 바꿈 */
   &.open {
     transform: translateX(-50%) translateY(0);
   }
 
-    border-top: 0.5px solid #CCC;
-    background: #FFF;
+  border-top: 0.5px solid #ccc;
+  background: #fff;
 
-    gap: 20px;
+  gap: 20px;
 `;
 
 export const DropFrame = styled.div`
-    position: relative;
+  position: relative;
 `;
 
 export const DropPro = styled.div`
-    position: absolute;
+  position: absolute;
 
-    top: 50%;
-    left: 50%;
+  top: 50%;
+  left: 50%;
 
-    /* 자식 크기만큼 자신의 중앙을 기준으로 이동 */
-    transform: translate(-190%, -50%);
+  /* 자식 크기만큼 자신의 중앙을 기준으로 이동 */
+  transform: translate(-190%, -50%);
 `;
 
 export const DropFrame2 = styled.div`
-    position: relative;
+  position: relative;
 `;
 
 export const DropPro2 = styled.div`
-    position: absolute;
+  position: absolute;
 
-    top: 50%;
-    left: 50%;
+  top: 50%;
+  left: 50%;
 
-    /* 자식 크기만큼 자신의 중앙을 기준으로 이동 */
-    transform: translate(85%, -50%);
+  /* 자식 크기만큼 자신의 중앙을 기준으로 이동 */
+  transform: translate(85%, -50%);
 `;
 
 export const Camera = styled.div`
-   position: absolute;
+  position: absolute;
 
-    top: 50%;
-    left: 50%;
+  top: 50%;
+  left: 50%;
 
-    /* 자식 크기만큼 자신의 중앙을 기준으로 이동 */
-    transform: translate(-465%, -50%);
+  /* 자식 크기만큼 자신의 중앙을 기준으로 이동 */
+  transform: translate(-465%, -50%);
 
-    z-index: 9999;
+  z-index: 9999;
 `;
 
 export const DropFrame1 = styled.div`
-    position: relative;
+  position: relative;
 `;
 
 export const DropFrame3 = styled.div`
-    position: relative;
+  position: relative;
 `;
 
 export const DropPro3 = styled.div`
-    position: absolute;
+  position: absolute;
 
-    top: 50%;
-    left: 50%;
+  top: 50%;
+  left: 50%;
 
-    /* 자식 크기만큼 자신의 중앙을 기준으로 이동 */
-    transform: translate(380%, -50%);
+  /* 자식 크기만큼 자신의 중앙을 기준으로 이동 */
+  transform: translate(380%, -50%);
+`;
+
+export const BackGround = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
 `;

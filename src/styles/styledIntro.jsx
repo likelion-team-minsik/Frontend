@@ -9,20 +9,21 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.div`
-  position: fix;
-  margin-top: 20px;
+  position: relative;
+  top: 20px;
   margin-left: 30px;
 `;
 
 export const Menu = styled.div`
   position: absolute;
-  top: -5px;
+  top: 14px;
   right: 30px;
   cursor: pointer;
+  z-index: 2px;
 `;
 
 export const Section1 = styled.div`
-  margin-top: 70px;
+  margin-top: 80px;
   margin-left: 30px;
 `;
 
@@ -38,7 +39,7 @@ export const Title1 = styled.div`
 export const TitleImage = styled.div`
   position: absolute;
   margin-left: 124px;
-  top: 109px;
+  top: 118px;
 `;
 
 export const IntroImage1 = styled.div`

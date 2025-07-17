@@ -17,7 +17,7 @@ const Menu = ({ isOpen, onClose }) => {
         width="285.558px"
         height="auto"
       />
-      <M.Menu onClick={() => goPage("/")}>
+      <M.Menu onClick={onClose}>
         <img
           src={`${process.env.PUBLIC_URL}/images/메뉴.svg`}
           alt="menu"
@@ -37,7 +37,9 @@ const Menu = ({ isOpen, onClose }) => {
       <div id="menu4" onClick={() => goPage("/Tool")}>
         장비 구경하기
       </div>
-      <div id="menu5" onClick={()=> goPage("/TamcleTalk")}>탐클톡</div>
+      <div id="menu5" onClick={() => goPage("/TamcleTalk")}>
+        탐클톡
+      </div>
     </M.MenuBox>
   );
 };
