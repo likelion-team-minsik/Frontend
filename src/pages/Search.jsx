@@ -12,6 +12,8 @@ const Search = () => {
 
   return (
     <S.Container>
+      {menuOpen && <S.Background onClick={() => setMenuOpen(false)} />}
+      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
       <S.Logo>
         <img
           src={`${process.env.PUBLIC_URL}/images/로고.svg`}
@@ -79,8 +81,6 @@ const Search = () => {
           <div className="forest5">구로</div>
         </S.List2>
       </S.Section>
-      {menuOpen && <S.Background onClick={() => setMenuOpen(false)} />}
-      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </S.Container>
   );
 };

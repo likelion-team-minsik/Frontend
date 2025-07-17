@@ -23,6 +23,8 @@ const Result4 = () => {
 
   return (
     <R.Container>
+      {menuOpen && <R.Background onClick={() => setMenuOpen(false)} />}
+      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
       <R.Logo>
         <img
           src={`${process.env.PUBLIC_URL}/images/로고.svg`}
@@ -125,8 +127,6 @@ const Result4 = () => {
           </R.ResetBtn>
         </R.Post>
       </R.Frame2>
-      {menuOpen && <R.Background onClick={() => setMenuOpen(false)} />}
-      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </R.Container>
   );
 };

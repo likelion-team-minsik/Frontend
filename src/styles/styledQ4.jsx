@@ -16,7 +16,7 @@ export const Box = styled.div`
 `;
 
 export const Bar1 = styled.div`
-  width: 79px;
+  width: 78.6px;
   height: 3px;
   flex-shrink: 0;
   background: #ff8b9a;
@@ -24,11 +24,11 @@ export const Bar1 = styled.div`
   z-index: 2;
   align-items: flex-start;
   left: 0px;
-  top: 65px;
+  top: 70px;
 `;
 
 export const Bar2 = styled.div`
-  width: 79px;
+  width: 78.6px;
   height: 3px;
   flex-shrink: 0;
   background: #8be6ff;
@@ -36,12 +36,12 @@ export const Bar2 = styled.div`
   z-index: 2;
   align-items: flex-start;
   left: 0px;
-  top: 65px;
-  margin-left: 79px;
+  top: 70px;
+  margin-left: 78.6px;
 `;
 
 export const Bar3 = styled.div`
-  width: 79px;
+  width: 78.6px;
   height: 3px;
   flex-shrink: 0;
   background: #fff58b;
@@ -49,12 +49,12 @@ export const Bar3 = styled.div`
   z-index: 2;
   align-items: flex-start;
   left: 0px;
-  top: 65px;
-  margin-left: 158px;
+  top: 70px;
+  margin-left: 157.2px;
 `;
 
 export const Bar4 = styled.div`
-  width: 79px;
+  width: 78.6px;
   height: 3px;
   flex-shrink: 0;
   background: #a88bff;
@@ -62,8 +62,8 @@ export const Bar4 = styled.div`
   z-index: 2;
   align-items: flex-start;
   left: 0px;
-  top: 65px;
-  margin-left: 237px;
+  top: 70px;
+  margin-left: 235.8px;
 `;
 
 export const TextGroup = styled.div`

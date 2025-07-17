@@ -13,19 +13,21 @@ export const Box = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 20px;
 `;
 
 export const Logo = styled.div`
-  position: fix;
-  margin-top: 20px;
+  position: relative;
+  top: 20px;
   margin-left: 30px;
 `;
 
 export const Menu = styled.div`
   position: absolute;
-  top: -5px;
+  top: 14px;
   right: 30px;
   cursor: pointer;
+  z-index: 2px;
 `;
 
 export const Title = styled.div`
@@ -95,8 +97,8 @@ export const Frame = styled.div`
 
 export const TextBox1 = styled.div`
   display: flex;
-  width: 320px;
-  height: 118px;
+  width: 334px;
+  height: 140px;
   padding: 10px;
   justify-content: left;
   align-items: left;
@@ -113,7 +115,7 @@ export const TextBox1 = styled.div`
     flex-direction: column;
     color: #000;
     font-family: Pretendard;
-    font-size: 13.5px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: 200%; /* 28px */
@@ -134,8 +136,8 @@ export const TextBox1 = styled.div`
 
 export const TextBox2 = styled.div`
   display: flex;
-  width: 320px;
-  height: 118px;
+  width: 334px;
+  height: 140px;
   padding: 10px;
   justify-content: left;
   align-items: left;
@@ -151,7 +153,7 @@ export const TextBox2 = styled.div`
     flex-direction: column;
     color: #000;
     font-family: Pretendard;
-    font-size: 13.5px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: 200%; /* 28px */

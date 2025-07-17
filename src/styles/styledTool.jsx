@@ -13,19 +13,21 @@ export const Box = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 13px;
 `;
 
 export const Logo = styled.div`
-  position: fix;
-  margin-top: 20px;
+  position: relative;
+  top: 20px;
   margin-left: 30px;
 `;
 
 export const Menu = styled.div`
   position: absolute;
-  top: -5px;
+  top: 14px;
   right: 30px;
   cursor: pointer;
+  z-index: 2px;
 `;
 
 export const Title = styled.div`
