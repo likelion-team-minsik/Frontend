@@ -20,27 +20,28 @@ export const Illust = styled.div`
   height: 588.636px;
   flex-shrink: 0;
   aspect-ratio: 272/588.64;
-  margin-top: 40px;
+  margin-top: 60px;
   right: 100px;
 `;
 
 export const Logo = styled.div`
-  position: fix;
-  margin-top: 20px;
+  position: relative;
+  top: 20px;
   margin-left: 30px;
 `;
 
 export const Menu = styled.div`
   position: absolute;
-  top: -5px;
+  top: 14px;
   right: 30px;
   cursor: pointer;
+  z-index: 2px;
 `;
 
 export const Background = styled.div`
   position: fixed;
   left: 0;
-  top: 0;
+  top: 5px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);

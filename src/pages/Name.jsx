@@ -30,6 +30,8 @@ const Name = () => {
 
   return (
     <N.Container>
+      {menuOpen && <N.Background onClick={() => setMenuOpen(false)} />}
+      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
       <N.Logo>
         <img
           src={`${process.env.PUBLIC_URL}/images/로고.svg`}
@@ -64,8 +66,6 @@ const Name = () => {
         ></N.InputName>
         <N.TestBtn onClick={start}>시작하기</N.TestBtn>
       </N.Box>
-      {menuOpen && <N.Background onClick={() => setMenuOpen(false)} />}
-      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </N.Container>
   );
 };

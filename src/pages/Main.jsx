@@ -12,6 +12,8 @@ const Main = () => {
 
   return (
     <M.Container>
+      {menuOpen && <M.Background onClick={() => setMenuOpen(false)} />}
+      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
       <M.Logo>
         <img
           src={`${process.env.PUBLIC_URL}/images/로고.svg`}
@@ -37,8 +39,6 @@ const Main = () => {
           />
         </M.Illust>
       </M.Box>
-      {menuOpen && <M.Background onClick={() => setMenuOpen(false)} />}
-      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </M.Container>
   );
 };

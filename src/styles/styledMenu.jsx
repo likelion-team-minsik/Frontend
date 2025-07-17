@@ -23,8 +23,8 @@ export const Menu = styled.div`
 
 export const MenuBox = styled.div`
   position: absolute;
-  z-index: 3;
-  top: -20px;
+  z-index: 100;
+
   right: ${({ isOpen }) => (isOpen ? "0px" : "-300px")};
   width: 285.558px;
   height: 671.5px;

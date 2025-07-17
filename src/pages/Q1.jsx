@@ -16,6 +16,8 @@ const Q1 = () => {
 
   return (
     <Q.Container>
+      {menuOpen && <Q.Background onClick={() => setMenuOpen(false)} />}
+      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
       <Q.Logo>
         <img
           src={`${process.env.PUBLIC_URL}/images/로고.svg`}
@@ -57,8 +59,6 @@ const Q1 = () => {
           </div>
         </Q.TextGroup>
       </Q.Box>
-      {menuOpen && <Q.Background onClick={() => setMenuOpen(false)} />}
-      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </Q.Container>
   );
 };

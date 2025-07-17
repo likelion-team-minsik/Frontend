@@ -24,7 +24,7 @@ export const Bar1 = styled.div`
   z-index: 2;
   align-items: flex-start;
   left: 0px;
-  top: 50px;
+  top: 65px;
 `;
 
 export const Bar2 = styled.div`
@@ -36,7 +36,7 @@ export const Bar2 = styled.div`
   z-index: 2;
   align-items: flex-start;
   left: 0px;
-  top: 50px;
+  top: 65px;
   margin-left: 79px;
 `;
 
@@ -49,7 +49,7 @@ export const Bar3 = styled.div`
   z-index: 2;
   align-items: flex-start;
   left: 0px;
-  top: 50px;
+  top: 65px;
   margin-left: 158px;
 `;
 
@@ -62,7 +62,7 @@ export const Bar4 = styled.div`
   z-index: 2;
   align-items: flex-start;
   left: 0px;
-  top: 50px;
+  top: 65px;
   margin-left: 237px;
 `;
 
@@ -138,23 +138,22 @@ export const Illust = styled.div`
   height: 588.636px;
   flex-shrink: 0;
   aspect-ratio: 272/588.64;
-  margin-top: 40px;
+  margin-top: 60px;
   right: 100px;
 `;
 
 export const Logo = styled.div`
-  position: fix;
-  margin-top: 20px;
+  position: relative;
+  top: 20px;
   margin-left: 30px;
-  z-index: 4;
 `;
 
 export const Menu = styled.div`
   position: absolute;
-  top: -5px;
+  top: 14px;
   right: 30px;
   cursor: pointer;
-  z-index: 3;
+  z-index: 2px;
 `;
 
 export const BackBtn = styled.div`

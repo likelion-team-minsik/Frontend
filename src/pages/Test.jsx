@@ -16,6 +16,8 @@ const Test = () => {
 
   return (
     <T.Container>
+      {menuOpen && <T.Background onClick={() => setMenuOpen(false)} />}
+      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
       <T.Logo>
         <img
           src={`${process.env.PUBLIC_URL}/images/로고.svg`}
@@ -43,8 +45,6 @@ const Test = () => {
         <div id="title">나의 클라이밍 스타일은?</div>
         <T.TestBtn onClick={start}>시작하기</T.TestBtn>
       </T.Box>
-      {menuOpen && <T.Background onClick={() => setMenuOpen(false)} />}
-      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
     </T.Container>
   );
 };
