@@ -114,7 +114,7 @@ export const Check = styled.div`
 
   position: absolute;
   top: 200px;
-  right: 800px;
+  left: 275px;
 `;
 
 export const Key = styled.div`
