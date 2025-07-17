@@ -315,7 +315,7 @@ export const Box5 = styled.div`
   margin-right: -15px;
 
   position: fixed;
-  z-index: 99999;
+  z-index: 3;
   bottom: 0;
 `;
 
@@ -326,5 +326,5 @@ export const BackGround = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
+  z-index: 5;
 `;
