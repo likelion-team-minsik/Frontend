@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import posts from "../data/post";
 import comments from "../data/comment";
 import * as R from "../styles/StyledCommentArea";
@@ -32,22 +32,28 @@ function CommentArea() {
 
   const goMenu = () => setMenuOpen((prev) => !prev);
 
+  const navigate = useNavigate();
+
+  const goMain = () => {
+    navigate(`/`);
+  };
+
   return (
     <R.Background>
       <R.BackBox>
         {menuOpen && <R.BackGround onClick={() => setMenuOpen(false)} />}
         <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
         <R.TopLogo>
-          <R.WordLogo>
+          <R.WordLogo onClick={goMain}>
             <img
-              src={`${process.env.PUBLIC_URL}/images/Word.png`}
+              src={`${process.env.PUBLIC_URL}/images/logo.svg`}
               alt="왼쪽 상단 글자 로고입니다."
-              width=" 161.125px"
+              width=" 165px"
             />
           </R.WordLogo>
           <R.PicLogo onClick={goMenu}>
             <img
-              src={`${process.env.PUBLIC_URL}/images/Pic.png`}
+              src={`${process.env.PUBLIC_URL}/images/menu.svg`}
               alt="오른쪽 상단 그림 로고입니다."
               width="40px"
             />

@@ -10,11 +10,15 @@ const Intro = () => {
 
   const goMenu = () => setMenuOpen((prev) => !prev);
 
+  const goMain = () => {
+    navigate(`/`);
+  };
+
   return (
     <I.Container>
       {menuOpen && <I.Background onClick={() => setMenuOpen(false)} />}
       <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-      <I.Logo>
+      <I.Logo onClick={goMain}>
         <img
           src={`${process.env.PUBLIC_URL}/images/logo.svg`}
           alt="logo"
@@ -26,7 +30,7 @@ const Intro = () => {
         <img
           src={`${process.env.PUBLIC_URL}/images/menu.svg`}
           alt="menu"
-          width="42px"
+          width="40px"
           height="auto"
         />
       </I.Menu>

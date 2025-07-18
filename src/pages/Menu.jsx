@@ -21,7 +21,7 @@ const Menu = ({ isOpen, onClose }) => {
         <img
           src={`${process.env.PUBLIC_URL}/images/menu.svg`}
           alt="menu"
-          width="42px"
+          width="40px"
           height="auto"
         />
       </M.Menu>
@@ -40,7 +40,6 @@ const Menu = ({ isOpen, onClose }) => {
 
       <div id="menu5" onClick={() => goPage("/TamcleTalk1")}>
         {/*1=비회원 2=로그인 완료 3=로그아웃 */}
-
         탐클톡
       </div>
     </M.MenuBox>

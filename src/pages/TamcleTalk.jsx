@@ -27,6 +27,10 @@ function TamcleTalk() {
     navigate("/MyPage");
   };
 
+  const goMain = () => {
+    navigate(`/`);
+  };
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const goMenu = () => setMenuOpen((prev) => !prev);
@@ -60,7 +64,7 @@ function TamcleTalk() {
     <R.Background>
       <R.BackBox>
         <R.TopLogo>
-          <R.WordLogo>
+          <R.WordLogo onClick={goMain}>
             <img
               src={`${process.env.PUBLIC_URL}/images/Word.png`}
               alt="왼쪽 상단 글자 로고입니다."
@@ -71,7 +75,7 @@ function TamcleTalk() {
             <img
               src={`${process.env.PUBLIC_URL}/images/Pic.png`}
               alt="오른쪽 상단 그림 로고입니다."
-              width="40px"
+              width="42px"
             />
           </R.PicLogo>
         </R.TopLogo>

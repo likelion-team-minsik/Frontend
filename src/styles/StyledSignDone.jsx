@@ -12,6 +12,7 @@ export const Background = styled.div`
 `;
 
 export const BackBox = styled.div`
+  margin: 0 auto;
   position: relative;
   width: 393px;
   height: 100vh;

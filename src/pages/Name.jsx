@@ -28,11 +28,15 @@ const Name = () => {
     }
   };
 
+  const goMain = () => {
+    navigate(`/`);
+  };
+
   return (
     <N.Container>
       {menuOpen && <N.Background onClick={() => setMenuOpen(false)} />}
       <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-      <N.Logo>
+      <N.Logo onClick={goMain}>
         <img
           src={`${process.env.PUBLIC_URL}/images/logo.svg`}
           alt="logo"
@@ -44,7 +48,7 @@ const Name = () => {
         <img
           src={`${process.env.PUBLIC_URL}/images/menu.svg`}
           alt="menu"
-          width="42px"
+          width="40px"
           height="auto"
         />
       </N.Menu>

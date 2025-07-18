@@ -11,6 +11,10 @@ function MyPage() {
 
   const goMenu = () => setMenuOpen((prev) => !prev);
 
+  const goMain = () => {
+    navigate(`/`);
+  };
+
   // 플러스 버튼 클릭 시 토글 함수
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
@@ -37,37 +41,36 @@ function MyPage() {
     }
   };
 
+  const [showModal, setShowModal] = useState(false);
 
-    const [showModal, setShowModal] = useState(false);
+  const handleLogout = () => {
+    setShowModal(true);
+  };
 
-    const handleLogout = () => {
-      setShowModal(true);
-    };
+  const confirmLogout = () => {
+    // 로그아웃 로직
+    setShowModal(false);
+  };
 
-    const confirmLogout = () => {
-      // 로그아웃 로직
-      setShowModal(false);
-    };
-
-    const cancelLogout = () => {
-      setShowModal(false);
-    };
+  const cancelLogout = () => {
+    setShowModal(false);
+  };
   return (
     <R.Background>
       <R.BackBox>
         {menuOpen && <R.BackGround onClick={() => setMenuOpen(false)} />}
         <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
         <R.TopLogo>
-          <R.WordLogo>
+          <R.WordLogo onClick={goMain}>
             <img
-              src={`${process.env.PUBLIC_URL}/images/Word.png`}
+              src={`${process.env.PUBLIC_URL}/images/logo.svg`}
               alt="왼쪽 상단 글자 로고입니다."
-              width=" 161.125px"
+              width=" 165px"
             />
           </R.WordLogo>
           <R.PicLogo onClick={goMenu}>
             <img
-              src={`${process.env.PUBLIC_URL}/images/Pic.png`}
+              src={`${process.env.PUBLIC_URL}/images/menu.svg`}
               alt="오른쪽 상단 그림 로고입니다."
               width="40px"
             />
@@ -185,13 +188,14 @@ function MyPage() {
             <img src={`${process.env.PUBLIC_URL}/images/Go.png`} width="33px" />
           </R.Go3Btn>
         </R.Box2>
-      <R.Box2 onClick={handleLogout}>
-        <R.Go4>로그아웃</R.Go4>
-        <R.Go4Btn>
-          <img src={`${process.env.PUBLIC_URL}/images/Go.png`} width="33px" />
-        </R.Go4Btn>
-      </R.Box2>
+        <R.Box2 onClick={handleLogout}>
+          <R.Go4>로그아웃</R.Go4>
+          <R.Go4Btn>
+            <img src={`${process.env.PUBLIC_URL}/images/Go.png`} width="33px" />
+          </R.Go4Btn>
+        </R.Box2>
       </R.Box3>
+
 
 
   {showModal && (
