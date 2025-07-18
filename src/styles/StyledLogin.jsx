@@ -94,7 +94,7 @@ export const Id = styled.div`
 export const IdInput = styled.input`
   display: inline-flex;
   height: 54px;
-  padding-left: 10px;
+  padding-left: 17px;
   align-items: center;
   flex-shrink: 0;
   border-radius: 10px;
@@ -122,12 +122,12 @@ export const KeyInput = styled.input`
   border: 1px solid #000;
   background: #fff;
 
-  padding-left: 10px;
+  padding-left: 17px;
 
   width: 333px;
 `;
 
-export const LoginBtn = styled.div`
+export const LoginBtn = styled.button`
   width: 333px;
   box-sizing: border-box;
 
@@ -145,11 +145,11 @@ export const LoginBtn = styled.div`
   font-weight: 500;
   border-radius: 10px;
   border: 1px solid #000;
-
+  cursor: pointer;
   margin-top: 190px;
-
+  background: none;
   position: relative;
-  z-index: 999;
+  z-index: 2;
 `;
 
 export const Find = styled.div`
@@ -180,4 +180,7 @@ export const Error = styled.div`
   font-style: normal;
   font-weight: 300;
   line-height: 130%; /* 18.2px */
+  position: relative;
+  top: 7px;
+  left: 15px;
 `;
