@@ -114,7 +114,7 @@ export const Check = styled.div`
   height: 33px;
 
   position: absolute;
-  top: 175px;
+  top: 200px;
   left: 275px;
 `;
 
