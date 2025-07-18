@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import * as R from "../styles/StyledSignDone";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";  // useLocation import
 import Menu from "./Menu";
 
 function SignDone() {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // location.state에서 username 받아오기 (없으면 빈 문자열)
+  const username = location.state?.username || "";
 
   const GoTcBtn = () => {
     navigate("/");
   };
 
   const [menuOpen, setMenuOpen] = useState(false);
-
   const goMenu = () => setMenuOpen((prev) => !prev);
 
   return (
@@ -24,7 +27,7 @@ function SignDone() {
             <img
               src={`${process.env.PUBLIC_URL}/images/Word.png`}
               alt="왼쪽 상단 글자 로고입니다."
-              width=" 161.125px"
+              width="161.125px"
             />
           </R.WordLogo>
           <R.PicLogo onClick={goMenu}>
@@ -38,12 +41,11 @@ function SignDone() {
         <R.Welcome>
           어서오세요
           <br />
-          happyclimbingday03님!
+          {username}님!
           <br />
-          환영합니다:){" "}
+          환영합니다:)
         </R.Welcome>
         <R.CenterLogo>
-          {" "}
           <img
             src={`${process.env.PUBLIC_URL}/images/Pencil.png`}
             alt="가운데 로고입니다."
