@@ -16,11 +16,15 @@ const Tool = () => {
     setName(storedName);
   }, []);
 
+  const goMain = () => {
+    navigate(`/`);
+  };
+
   return (
     <T.Container>
       {menuOpen && <T.Background onClick={() => setMenuOpen(false)} />}
       <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-      <T.Logo>
+      <T.Logo onClick={goMain}>
         <img
           src={`${process.env.PUBLIC_URL}/images/logo.svg`}
           alt="logo"
@@ -32,7 +36,7 @@ const Tool = () => {
         <img
           src={`${process.env.PUBLIC_URL}/images/menu.svg`}
           alt="menu"
-          width="42px"
+          width="40px"
           height="auto"
         />
       </T.Menu>

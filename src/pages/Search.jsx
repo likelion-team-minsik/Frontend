@@ -10,11 +10,15 @@ const Search = () => {
 
   const goMenu = () => setMenuOpen((prev) => !prev);
 
+  const goMain = () => {
+    navigate(`/`);
+  };
+
   return (
     <S.Container>
       {menuOpen && <S.Background onClick={() => setMenuOpen(false)} />}
       <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-      <S.Logo>
+      <S.Logo onClick={goMain}>
         <img
           src={`${process.env.PUBLIC_URL}/images/logo.svg`}
           alt="logo"
@@ -26,7 +30,7 @@ const Search = () => {
         <img
           src={`${process.env.PUBLIC_URL}/images/menu.svg`}
           alt="menu"
-          width="42px"
+          width="40px"
           height="auto"
         />
       </S.Menu>

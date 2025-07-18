@@ -21,7 +21,7 @@ const Menu = ({ isOpen, onClose }) => {
         <img
           src={`${process.env.PUBLIC_URL}/images/menu.svg`}
           alt="menu"
-          width="42px"
+          width="40px"
           height="auto"
         />
       </M.Menu>

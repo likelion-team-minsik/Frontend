@@ -21,11 +21,15 @@ const Result4 = () => {
     setName(storedName);
   }, []);
 
+  const goMain = () => {
+    navigate(`/`);
+  };
+
   return (
     <R.Container>
       {menuOpen && <R.Background onClick={() => setMenuOpen(false)} />}
       <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-      <R.Logo>
+      <R.Logo onClick={goMain}>
         <img
           src={`${process.env.PUBLIC_URL}/images/logo.svg`}
           alt="logo"
@@ -37,7 +41,7 @@ const Result4 = () => {
         <img
           src={`${process.env.PUBLIC_URL}/images/menu.svg`}
           alt="menu"
-          width="42px"
+          width="40px"
           height="auto"
         />
       </R.Menu>

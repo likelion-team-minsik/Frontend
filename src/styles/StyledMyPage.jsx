@@ -10,6 +10,7 @@ export const Background = styled.div`
 `;
 
 export const BackBox = styled.div`
+  margin: 0 auto;
   position: relative;
   width: 393px;
   height: 100vh;
@@ -283,25 +284,23 @@ export const ModalOverlay = styled.div`
 export const ModalContent = styled.div`
   background: white;
   border-radius: 12px;
-    width: 276.834px;
+  width: 276.834px;
   height: 137px;
   flex-shrink: 0;
   overflow: hidden;
   text-align: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
 `;
 
 export const ModalText = styled.div`
   padding: 20px 0 15px;
 
-
   color: #000;
-font-family: Pretendard;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 130%; /* 20.8px */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
 `;
 
 export const HorizontalLine = styled.div`
@@ -312,7 +311,7 @@ export const HorizontalLine = styled.div`
 
 export const ButtonRow = styled.div`
   display: flex;
-  align-items: stretch;     // 버튼과 선이 높이 맞춰지도록!
+  align-items: stretch; // 버튼과 선이 높이 맞춰지도록!
   height: 50px;
 
   button {
@@ -331,8 +330,6 @@ export const ButtonRow = styled.div`
 `;
 
 export const LogoImg = styled.img`
-
-margin-top: 27.55px;
-margin-bottom: -13px;
-;
+  margin-top: 27.55px;
+  margin-bottom: -13px;
 `;

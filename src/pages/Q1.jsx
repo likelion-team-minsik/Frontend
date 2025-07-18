@@ -14,11 +14,15 @@ const Q1 = () => {
     navigate(`/Q2`);
   };
 
+  const goMain = () => {
+    navigate(`/`);
+  };
+
   return (
     <Q.Container>
       {menuOpen && <Q.Background onClick={() => setMenuOpen(false)} />}
       <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-      <Q.Logo>
+      <Q.Logo onClick={goMain}>
         <img
           src={`${process.env.PUBLIC_URL}/images/logo.svg`}
           alt="logo"
@@ -30,7 +34,7 @@ const Q1 = () => {
         <img
           src={`${process.env.PUBLIC_URL}/images/menu.svg`}
           alt="menu"
-          width="42px"
+          width="40px"
           height="auto"
         />
       </Q.Menu>
