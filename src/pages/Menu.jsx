@@ -19,7 +19,7 @@ const Menu = ({ isOpen, onClose }) => {
       />
       <M.Menu onClick={onClose}>
         <img
-          src={`${process.env.PUBLIC_URL}/images/메뉴.svg`}
+          src={`${process.env.PUBLIC_URL}/images/menu.svg`}
           alt="menu"
           width="42px"
           height="auto"
@@ -37,9 +37,10 @@ const Menu = ({ isOpen, onClose }) => {
       <div id="menu4" onClick={() => goPage("/Tool")}>
         장비 구경하기
       </div>
-      <div id="menu5" onClick={() => goPage("/TamcleTalk2")}>{/*1=비회원 2=로그인 완료 3=로그아웃 */}
+      <div id="menu5" onClick={() => goPage("/TamcleTalk2")}>
+        {/*1=비회원 2=로그인 완료 3=로그아웃 */}
         탐클톡
-      </div> 
+      </div>
     </M.MenuBox>
   );
 };

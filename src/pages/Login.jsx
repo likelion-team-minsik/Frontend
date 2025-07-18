@@ -13,6 +13,7 @@ function Login() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault(); //로그인폼 제출 시 새로고침 방지!
@@ -31,13 +32,15 @@ function Login() {
       localStorage.setItem("authToken", key);
       navigate("/TamcleTalk2");
     } catch (err) {
-      console.error("로그인 실패: " err.response?err.response.data:err.message);
+      console.error(
+        "로그인 실패: " + (err.response ? err.response.data : err.message)
+      );
       if (err.response && err.response.status === 400)
         setError("잘못된 아이디 또는 비밀번호입니다");
     } finally {
-        setLoading(false);
-      }
-    };
+      setLoading(false);
+    }
+  };
 
   return (
     <R.Background>
@@ -74,7 +77,7 @@ function Login() {
               placeholder="아이디 입력(6~20자)"
               type="text"
               value={username}
-              onChange={(e) => setUsername(e.target, value)}
+              onChange={(e) => setUsername(e.target.value)}
             ></R.IdInput>
             <R.Key>비밀번호</R.Key>
             <R.KeyInput
