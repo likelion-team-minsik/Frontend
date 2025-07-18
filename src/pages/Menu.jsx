@@ -38,9 +38,8 @@ const Menu = ({ isOpen, onClose }) => {
         장비 구경하기
       </div>
 
-      <div id="menu5" onClick={() => goPage("/TamcleTalk2")}>
+      <div id="menu5" onClick={() => goPage("/TamcleTalk1")}>
         {/*1=비회원 2=로그인 완료 3=로그아웃 */}
-
         탐클톡
       </div>
     </M.MenuBox>
