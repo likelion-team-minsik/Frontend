@@ -10,6 +10,7 @@ export const Background = styled.div`
 `;
 
 export const BackBox = styled.div`
+  margin: 0 auto;
   position: relative;
   width: 393px;
   height: 100vh;
@@ -113,7 +114,7 @@ export const Check = styled.div`
   height: 33px;
 
   position: absolute;
-  top: 175px;
+  top: 200px;
   left: 275px;
 `;
 

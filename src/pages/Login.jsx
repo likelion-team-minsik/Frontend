@@ -15,6 +15,10 @@ function Login() {
   const [loading, setLoading] = useState("");
   const navigate = useNavigate();
 
+  const goMain = () => {
+    navigate(`/`);
+  };
+
   const handleLogin = async (e) => {
     e.preventDefault(); //로그인폼 제출 시 새로고침 방지!
     setLoading(true);
@@ -48,7 +52,7 @@ function Login() {
         {menuOpen && <R.BackGround onClick={() => setMenuOpen(false)} />}
         <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
         <R.TopLogo>
-          <R.WordLogo>
+          <R.WordLogo onClick={goMain}>
             <img
               src={`${process.env.PUBLIC_URL}/images/Word.png`}
               alt="왼쪽 상단 글자 로고입니다."

@@ -10,6 +10,7 @@ export const Background = styled.div`
 `;
 
 export const BackBox = styled.div`
+  margin: 0 auto;
   width: 393px;
   height: 100vh;
   display: flex;
@@ -30,7 +31,7 @@ export const TopLogo = styled.div`
 
   justify-content: space-between;
   align-items: center;
-  z-index: 99;
+  z-index: 2;
 `;
 
 export const WordLogo = styled.div`
@@ -46,7 +47,7 @@ export const PicLogo = styled.div`
   height: 43.556px;
   color: #000000;
   cursor: pointer;
-  z-index: 99;
+  z-index: 2;
 `;
 
 export const Word = styled.div`
@@ -225,5 +226,5 @@ export const BackGround = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
+  z-index: 5;
 `;

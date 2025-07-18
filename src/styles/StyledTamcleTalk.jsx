@@ -5,11 +5,12 @@ export const Background = styled.div`
   align-items: center;
   flex-direction: column;
   height: 100vh; /* 화면 전체 높이로 지정 */
-  position: relative;
+
   justify-content: center;
 `;
 
 export const BackBox = styled.div`
+  margin: 0 auto;
   position: relative;
   width: 393px;
   height: 100vh;
@@ -32,11 +33,9 @@ export const TopLogo = styled.div`
 `;
 
 export const WordLogo = styled.div`
-  height: 27px;
-  border-width: 0.5px;
-
-  width: 161.125px;
   flex-shrink: 0;
+  width="180px";
+  height="auto";
 `;
 
 export const PicLogo = styled.div`
