@@ -7,8 +7,7 @@ import axios from "axios";
 
 function Signup2() {
   // 1. 초기 도메인값 설정
-const [domain, setDomain] = useState("gmail.com"); // ✅ 기본 도메인 설정
-
+const [domain, setDomain] = useState("gmail.com"); // 
   const handleDomainChange = (e) => {
     setDomain(e.target.value);
   };

@@ -11,7 +11,7 @@ function SignDone() {
   const username = location.state?.username || "";
 
   const GoTcBtn = () => {
-    navigate("/");
+    navigate("/TamcleTalk2");
   };
 
   const [menuOpen, setMenuOpen] = useState(false);

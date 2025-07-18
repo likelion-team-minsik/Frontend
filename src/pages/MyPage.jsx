@@ -18,6 +18,8 @@ function MyPage() {
 
   const navigate = useNavigate();
 
+  const goTcT3 = () => navigate("/TamcleTalk3");
+  
   const fileInputRef = useRef(null);
   // 카메라 이미지 클릭 시 파일 선택창 열기
   const handleCameraClick = () => {
@@ -195,11 +197,11 @@ function MyPage() {
   {showModal && (
     <R.ModalOverlay>
       <R.ModalContent>
-        <R.LogoImg src={`${process.env.PUBLIC_URL}/images/로고.svg`} alt="로고" width="80.288px" />
+        <R.LogoImg src={`${process.env.PUBLIC_URL}/images/logo.svg`} alt="로고" width="80.288px" />
         <R.ModalText>로그아웃 하시겠습니까?</R.ModalText>
         <R.HorizontalLine />
         <R.ButtonRow>
-          <button onClick={confirmLogout}>예</button>
+          <button onClick={goTcT3}>예</button>
           <div className="v-line" />
           <button onClick={cancelLogout}>아니오</button>
         </R.ButtonRow>
