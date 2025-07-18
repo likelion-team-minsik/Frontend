@@ -21,7 +21,7 @@ const Loading = () => {
     <L.Container>
       <L.Logo>
         <img
-          src={`${process.env.PUBLIC_URL}/images/로고.svg`}
+          src={`${process.env.PUBLIC_URL}/images/logo.svg`}
           alt="logo"
           width="165px"
           height="auto"
@@ -29,7 +29,7 @@ const Loading = () => {
       </L.Logo>
       <L.Menu>
         <img
-          src={`${process.env.PUBLIC_URL}/images/메뉴.svg`}
+          src={`${process.env.PUBLIC_URL}/images/menu.svg`}
           alt="menu"
           width="42px"
           height="auto"

@@ -16,7 +16,7 @@ const Search = () => {
       <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
       <S.Logo>
         <img
-          src={`${process.env.PUBLIC_URL}/images/로고.svg`}
+          src={`${process.env.PUBLIC_URL}/images/logo.svg`}
           alt="logo"
           width="165px"
           height="auto"
@@ -24,7 +24,7 @@ const Search = () => {
       </S.Logo>
       <S.Menu onClick={goMenu}>
         <img
-          src={`${process.env.PUBLIC_URL}/images/메뉴.svg`}
+          src={`${process.env.PUBLIC_URL}/images/menu.svg`}
           alt="menu"
           width="42px"
           height="auto"
