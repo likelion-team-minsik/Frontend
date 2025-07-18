@@ -172,3 +172,12 @@ export const BackGround = styled.div`
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 10;
 `;
+
+export const Error = styled.div`
+  color: #ff3c3c;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%; /* 18.2px */
+`;
