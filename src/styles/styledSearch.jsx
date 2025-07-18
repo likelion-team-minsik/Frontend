@@ -65,6 +65,8 @@ export const List = styled.div`
     border-radius: 15px;
     border: 1.7px solid #606e4b;
     margin-right: 7px;
+    text-decoration: none;
+    }
   }
 
   .place2 {
@@ -80,6 +82,7 @@ export const List = styled.div`
     border-radius: 15px;
     border: 1.7px solid #e85513;
     margin-right: 7px;
+    text-decoration: none;
   }
 
   .place3 {
@@ -94,6 +97,7 @@ export const List = styled.div`
     flex-shrink: 0;
     border-radius: 15px;
     border: 1.7px solid #22472d;
+    text-decoration: none;
   }
 
   .place4 {
@@ -109,6 +113,7 @@ export const List = styled.div`
     border-radius: 15px;
     border: 1.7px solid #ecaa3c;
     margin-right: 7px;
+    text-decoration: none;
   }
 
   .place5 {
@@ -124,6 +129,7 @@ export const List = styled.div`
     border-radius: 15px;
     border: 1.7px solid #90420c;
     margin-right: 7px;
+    text-decoration: none;
   }
 
   .place6 {
@@ -138,6 +144,7 @@ export const List = styled.div`
     flex-shrink: 0;
     border-radius: 15px;
     border: 1.7px solid #758000;
+    text-decoration: none;
   }
 
   .place7 {
@@ -153,6 +160,7 @@ export const List = styled.div`
     border-radius: 15px;
     border: 1.7px solid #b7274a;
     margin-right: 7px;
+    text-decoration: none;
   }
 
   .place8 {
@@ -168,6 +176,7 @@ export const List = styled.div`
     border-radius: 15px;
     border: 1.7px solid #1893a2;
     margin-right: 7px;
+    text-decoration: none;
   }
 
   .place9 {
@@ -182,6 +191,7 @@ export const List = styled.div`
     flex-shrink: 0;
     border-radius: 15px;
     border: 1.7px solid #e60213;
+    text-decoration: none;
   }
 
   .place10 {
@@ -197,6 +207,7 @@ export const List = styled.div`
     border-radius: 15px;
     border: 1.7px solid #83b4de;
     margin-right: 7px;
+    text-decoration: none;
   }
 
   .place11 {
@@ -212,6 +223,7 @@ export const List = styled.div`
     border-radius: 15px;
     border: 1.7px solid #046fab;
     margin-right: 7px;
+    text-decoration: none;
   }
 
   .place12 {
@@ -226,6 +238,7 @@ export const List = styled.div`
     flex-shrink: 0;
     border-radius: 15px;
     border: 1.7px solid #f09600;
+    text-decoration: none;
   }
 
   .place13 {
@@ -241,6 +254,7 @@ export const List = styled.div`
     border-radius: 15px;
     border: 1.7px solid #8cc11c;
     margin-right: 7px;
+    text-decoration: none;
   }
 
   .place14 {
@@ -255,6 +269,7 @@ export const List = styled.div`
     flex-shrink: 0;
     border-radius: 15px;
     border: 1.7px solid #611883;
+    text-decoration: none;
   }
 `;
 
@@ -278,6 +293,7 @@ export const List2 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
   }
 
   .park2 {
@@ -290,6 +306,7 @@ export const List2 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
   }
 
   .park3 {
@@ -302,6 +319,7 @@ export const List2 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
   }
 
   .park4 {
@@ -315,6 +333,7 @@ export const List2 = styled.div`
     align-items: center;
     justify-content: center;
     margin-left: 55px;
+    text-decoration: none;
   }
 
   .park5 {
@@ -327,6 +346,7 @@ export const List2 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
   }
 
   .forest1 {
@@ -339,6 +359,7 @@ export const List2 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
   }
 
   .forest2 {
@@ -351,6 +372,7 @@ export const List2 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
   }
 
   .forest3 {
@@ -363,6 +385,7 @@ export const List2 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
   }
 
   .forest4 {
@@ -376,6 +399,7 @@ export const List2 = styled.div`
     align-items: center;
     justify-content: center;
     margin-left: 55px;
+    text-decoration: none;
   }
 
   .forest5 {
@@ -388,6 +412,7 @@ export const List2 = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
   }
 `;
 
