@@ -11,7 +11,7 @@ const Name = () => {
   const goMenu = () => setMenuOpen((prev) => !prev);
 
   const start = () => {
-    navigate(`/Question`);
+    navigate(`/Q1`);
     localStorage.setItem("userName", name);
   };
 
