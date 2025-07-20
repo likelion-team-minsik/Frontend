@@ -52,12 +52,12 @@ const Result4 = () => {
       const storedMyResult = async () => {
         try {
           const token = localStorage.getItem("authToken");
-          if (!token) {
-            navigate("/login");
-            return;
+          const loginHeaders = {};
+          if (token) {
+            loginHeaders.Authorization = `Token ${token}`;
           }
           const response = await axios.get("/my-result", {
-            headers: { Authorization: `Token ${token}` },
+            headers: loginHeaders,
           });
 
           if (response.data.result_type === "응원형") {

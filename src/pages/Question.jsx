@@ -95,6 +95,7 @@ const Question = () => {
     //마지막 질문이면 api 호출, 결과 제출
     if (lastQuestion) {
       setLoading(true);
+      console.log("최종 전송될 myAnswers 배열:", newMyAnswers);
       setError(null);
 
       try {
