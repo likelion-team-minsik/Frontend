@@ -100,27 +100,39 @@ const Question = () => {
       try {
         const token = localStorage.getItem("authToken"); //로그인 토큰 가져오기
 
-        if (!token) {
-          navigate("/login");
-          return;
+        //로그인 사용자 헤더 필요(비로그인 사용자는 인증헤더 필요없음)
+        const loginHeaders = {};
+        if (token) {
+          loginHeaders.Authorization = `Token ${token}`;
         }
 
         //선택된 모든 답변을 담은 최종 배열
         const response = await axios.post(
           "/submit/",
           {
-            answers: newMyAnswers,
+            answers: newMyAnswers, //명세서대로 answers로 감싸고 안에 choice_id 배열
           },
           {
-            headers: {
-              Authorization: `Token ${token}`,
-            },
+            headers: loginHeaders,
           }
         );
 
-        navigate("/analysis-result", {
-          state: { analysisResult: response.data },
-        });
+        const resultType = response.data.result_type;
+        localStorage.setItem("userType", resultType);
+        switch (resultType) {
+          case "도전형":
+            navigate("/Result1", { state: { analysisResult: response.data } });
+            break;
+          case "재미형":
+            navigate("/Result2", { state: { analysisResult: response.data } });
+            break;
+          case "계획형":
+            navigate("/Result3", { state: { analysisResult: response.data } });
+            break;
+          case "응원형":
+            navigate("/Result4", { state: { analysisResult: response.data } });
+            break;
+        }
       } catch (err) {
         if (err.response && err.response.status === 401) {
           navigate("/login");

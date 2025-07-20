@@ -8,12 +8,16 @@ const Tool = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [type, setType] = useState("");
 
   const goMenu = () => setMenuOpen((prev) => !prev);
 
   useEffect(() => {
     const storedName = localStorage.getItem("userName");
     setName(storedName);
+
+    const storedType = localStorage.getItem("userType");
+    setType(storedType);
   }, []);
 
   const goMain = () => {
@@ -49,7 +53,7 @@ const Tool = () => {
             height="150.5px"
           />
           <div id="titleText">
-            <span id="titleText1">도전형</span>
+            <span id="titleText1">{type}</span>
             <span id="titleText2">st 참고 장비</span>
           </div>
         </T.Title>
