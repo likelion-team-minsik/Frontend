@@ -34,12 +34,9 @@ export const TopLogo = styled.div`
 `;
 
 export const WordLogo = styled.div`
-  height: 27px;
-  border-width: 0.5px;
-
-  width: 161.125px;
   flex-shrink: 0;
-  margin-left: -3.5px;
+  width="180px";
+  height="auto";
 `;
 
 export const PicLogo = styled.div`

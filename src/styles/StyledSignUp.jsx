@@ -25,8 +25,6 @@ export const Background = styled.div`
   height: 100vh; /* 화면 전체 높이로 지정 */
 
   justify-content: center;
-
-  position: relative;
 `;
 
 export const BackBox = styled.div`
@@ -34,7 +32,6 @@ export const BackBox = styled.div`
   position: relative;
   width: 393px;
   height: 100vh;
-
   display: flex;
   align-items: center; /* 수평 중앙 정렬 */
   flex-direction: column;
@@ -51,18 +48,13 @@ export const TopLogo = styled.div`
 
   justify-content: space-between;
   align-items: center;
-
-  margin-top: 14px;
-
-  margin-right: 16px;
+  margin-top: 3px;
 `;
 
 export const WordLogo = styled.div`
-  height: 27px;
-  border-width: 0.5px;
-
-  width: 161.125px;
   flex-shrink: 0;
+  width="180px";
+  height="auto";
 `;
 
 export const PicLogo = styled.div`

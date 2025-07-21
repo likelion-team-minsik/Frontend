@@ -31,16 +31,12 @@ export const TopLogo = styled.div`
 
   justify-content: space-between;
   align-items: center;
-
-  margin-right: 16px; /*메인이랑 맞추기*/
 `;
 
 export const WordLogo = styled.div`
-  height: 27px;
-  border-width: 0.5px;
-
-  width: 161.125px;
   flex-shrink: 0;
+  width="180px";
+  height="auto";
 `;
 
 export const PicLogo = styled.div`
@@ -59,7 +55,7 @@ export const Sign = styled.div`
   line-height: 130%; /* 31.2px */
 
   width: 333px;
-
+  margin-left: 6px;
   margin-top: 35px;
 `;
 

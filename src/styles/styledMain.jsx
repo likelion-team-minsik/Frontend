@@ -26,8 +26,9 @@ export const Illust = styled.div`
 
 export const Logo = styled.div`
   position: relative;
-  top: 20px;
+  top: 19px;
   margin-left: 30px;
+  flex-shrink: 0;
 `;
 
 export const Menu = styled.div`

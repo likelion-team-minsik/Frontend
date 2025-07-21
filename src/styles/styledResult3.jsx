@@ -18,7 +18,7 @@ export const Box = styled.div`
 
 export const Logo = styled.div`
   position: relative;
-  top: 20px;
+  top: 19px;
   margin-left: 30px;
 `;
 
