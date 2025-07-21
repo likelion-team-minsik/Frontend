@@ -247,7 +247,7 @@ export const Post = styled.div`
     top: 22px;
     left: 15px;
     display: flex;
-    width: 260px;
+    width: 300px;
     padding: 0px 31px 0px 15px;
     justify-content: center;
     align-items: center;
@@ -258,7 +258,7 @@ export const Post = styled.div`
 
 export const ResetBtn = styled.div`
   position: absolute;
-  right: 17px;
+  right: 20px;
   top: 18px;
 `;
 
