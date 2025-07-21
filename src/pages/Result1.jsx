@@ -1,12 +1,15 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import * as R from "../styles/styledResult1";
 import Menu from "./Menu";
+import axios from "axios";
 
 const Result1 = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [analysisResult, setAnalysisResult] = useState(null);
 
   const goMenu = () => setMenuOpen((prev) => !prev);
 
@@ -16,14 +19,58 @@ const Result1 = () => {
 
   const [name, setName] = useState("");
 
-  useEffect(() => {
-    const storedName = localStorage.getItem("userName");
-    setName(storedName);
-  }, []);
-
   const goMain = () => {
     navigate(`/`);
   };
+
+  useEffect(() => {
+    const storedName = localStorage.getItem("userName");
+    setName(storedName);
+
+    if (location.state && location.state.analysisResult) {
+      const { analysisResult: initialResult } = location.state;
+      //도전형 유형과 일치하는지 확인
+      if (initialResult.result_type === "도전형") {
+        setAnalysisResult(initialResult);
+        localStorage.setItem("userType", initialResult.result_type);
+      } else {
+        //잘못된 유형으로 접근 시 올바른 페이지로 다시 접근
+        switch (initialResult.result_type) {
+          case "재미형":
+            navigate("/Result2", { state: { analysisResult: initialResult } });
+            break;
+          case "계획형":
+            navigate("/Result3", { state: { analysisResult: initialResult } });
+            break;
+          case "응원형":
+            navigate("/Result4", { state: { analysisResult: initialResult } });
+            break;
+        }
+      }
+    } else {
+      //로그인 후 이전에 했던 검사 결과 불러오기(get 사용)
+      const storedMyResult = async () => {
+        try {
+          const token = localStorage.getItem("authToken");
+          const loginHeaders = {};
+          if (token) {
+            loginHeaders.Authorization = `Token ${token}`;
+          }
+          const response = await axios.get("/my-result", {
+            headers: loginHeaders,
+          });
+
+          if (response.data.result_type === "도전형") {
+            setAnalysisResult(response.data);
+            localStorage.setItem("userType", response.data.result_type);
+          }
+        } catch (err) {
+          console.log("분석 결과 조회 실패", err);
+        }
+      };
+      storedMyResult();
+    }
+  }, [location.state, navigate]);
 
   return (
     <R.Container>

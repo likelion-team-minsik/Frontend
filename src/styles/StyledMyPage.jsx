@@ -34,12 +34,9 @@ export const TopLogo = styled.div`
 `;
 
 export const WordLogo = styled.div`
-  height: 27px;
-  border-width: 0.5px;
-
-  width: 161.125px;
   flex-shrink: 0;
-  margin-left: -3.5px;
+  width="180px";
+  height="auto";
 `;
 
 export const PicLogo = styled.div`
@@ -97,32 +94,32 @@ export const Nick = styled.div`
 `;
 
 export const NickInput = styled.input`
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
+  background-color: transparent; /* 배경 투명 */
+  border: none; /* 테두리 없앰 */
+  border-bottom: 0.5px solid #000;
+  outline: none; /* 포커스 테두리 없앰 */
+  width: 320px;
+  display: inline-flex;
+  padding-bottom: 15px;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 17px;
 
+  &::placeholder {
     color: #676767;
     font-family: Pretendard;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: 130%; /* 20.8px */
-
-    background-color: transparent; /* 배경 투명 */
-    border: none;                  /* 테두리 없앰 */
-    outline: none;                 /* 포커스 테두리 없앰 */
-
-    width: 320px;
-    display: inline-flex;
-
-   
-    padding-bottom: 10px;'
-
-    
-
-    align-items: center;
-    flex-shrink: 0;
-
-    border-bottom: 0.5px solid #000;
-    margin-top: 10px;
-    `;
+  }
+`;
 
 export const Box1 = styled.div`
   display: flex;
@@ -142,15 +139,14 @@ export const Box2 = styled.div`
   align-items: center;
 `;
 export const Box3 = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
-
   width: 333px;
   height: 100vh;
-
-  margin-top: 20px;
   gap: 10px;
   margin-left: 12px;
+  bottom: 20px;
 `;
 
 export const Go1 = styled.div``;
@@ -174,7 +170,7 @@ export const DropdownContainer = styled.div`
 
   left: 50%;
 
-  margin-top: 350px;
+  margin-top: 450px;
 
   width: 393px;
   height: 125px;
@@ -185,7 +181,7 @@ export const DropdownContainer = styled.div`
   align-items: center;
   gap: 10px;
 
-  z-index: 1000;
+  z-index: 1;
 
   /* 초기 상태: 가로 중앙, 아래로 숨김 */
   transform: translateX(-50%) translateY(100%);
@@ -238,7 +234,7 @@ export const Camera = styled.div`
   /* 자식 크기만큼 자신의 중앙을 기준으로 이동 */
   transform: translate(-465%, -50%);
 
-  z-index: 9999;
+  z-index: 2;
 `;
 
 export const DropFrame1 = styled.div`
@@ -278,7 +274,7 @@ export const ModalOverlay = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 3;
 `;
 
 export const ModalContent = styled.div`

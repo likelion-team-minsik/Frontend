@@ -34,6 +34,7 @@ function Login() {
 
       console.log("로그인 성공: ", response.data);
       localStorage.setItem("authToken", key);
+      localStorage.setItem("hasAccountHistory", "true");
       navigate("/TamcleTalk2");
     } catch (err) {
       console.error(
